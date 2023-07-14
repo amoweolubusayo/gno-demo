@@ -23,10 +23,10 @@ export default function Home() {
       }
 
       // Connect to Adena wallet
-      await adena.AddEstablish("Adena");
+      await window.adena.AddEstablish("Adena");
 
       //Get Account details
-      const account = await adena.GetAccount();
+      const account = await window.adena.GetAccount();
       console.log(account.address);
       setConnectedAccount(account.address);
       // Set the wallet connection status
